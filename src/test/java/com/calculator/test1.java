@@ -17,7 +17,7 @@ public class test1 {
 	 {
 		/*Подставляет значения в метод calcTax1,
 		 * где высчитывают процент налога с дохода*/
-         calc.fields[0].setText("hggfhjk");
+	 calc.fields[0].setText("hggfhjk");
          /* Запуск программы */
          String r = calc.fields[1].getText();
 	 double res= Double.valueOf(r);

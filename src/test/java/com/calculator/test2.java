@@ -8,7 +8,7 @@ import org.junit.Test;
 /*Импортирует из пакета NalogC класс tax*/
 import com.calculator.Calculator;
 /*Объявляем новый класс test1*/
-public class test1 {
+public class test2 {
 	/*Обозначает новую переменную из класса tax*/
 	Calculator calc = new Calculator();
 	/*InterruptedException это проверяемое исключение, генерируемый многими методами стандартной библиотеки, которые блокируют поток исполнения*/

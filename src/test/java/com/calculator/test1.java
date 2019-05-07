@@ -8,7 +8,7 @@ import org.junit.Test;
 /*Импортирует из пакета NalogC класс tax*/
 import com.calculator.Calculator;
 /*Объявляем новый класс test1*/
-public class test1 {
+public class test2 {
 	/*Обозначает новую переменную из класса tax*/
 	Calculator calc = new Calculator();
 	/*InterruptedException это проверяемое исключение, генерируемый многими методами стандартной библиотеки, которые блокируют поток исполнения*/
@@ -19,11 +19,17 @@ public class test1 {
 		 * где высчитывают процент налога с дохода*/
          calc.fields[0].setText("hggfhjk");
          /* Запуск программы */
+	 try{
          String r = calc.fields[1].getText();
 	 double res= Double.valueOf(r);
 		/*Заданное полученное значение*/
 	 double result=7.0;
 		/*Сравнивают высчитанное методом testCalc и заранее заданное значение */
 	 assertEquals(Double.toString(res),Double.toString(result));
+	 }
+         catch(Exception e){
+			/* Неудачное завершение выполнения теста */
+            Assert.fail("Проверьте правильность входных значений");
+        }
 	 }
 }

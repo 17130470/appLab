@@ -17,10 +17,13 @@ public class test1 {
 	 {
 		/*Подставляет значения в метод calcTax1,
 		 * где высчитывают процент налога с дохода*/
-	 double res= tax.calcTax(1000, 13);
+         calc.fields[0].setText("hggfhjk");
+         /* Запуск программы */
+         String r = calc.fields[1].getText();
+	 double res= Double.valueOf(r);
 		/*Заданное полученное значение*/
-	 double toch=130.0;
-		/*Сравнивают высчитанное методом calcTax и заранее заданное значение */
-	 assertEquals(Double.toString(res),Double.toString(toch));
+	 double result=7.0;
+		/*Сравнивают высчитанное методом testCalc и заранее заданное значение */
+	 assertEquals(Double.toString(res),Double.toString(result));
 	 }
 }

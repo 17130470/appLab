@@ -19,7 +19,6 @@ public class test1 {
 		 * где высчитывают процент налога с дохода*/
          calc.fields[0].setText("hggfhjk");
          /* Запуск программы */
-         calc.calculate();
          String r = calc.fields[1].getText();
 	 double res= Double.valueOf(r);
 		/*Заданное полученное значение*/
